@@ -1,0 +1,12 @@
+{
+	"pages":[
+		"pages/index/index",
+		"pages/play/play"
+	],
+	"window":{
+		"navigationBarBackgroundColor":"#0094ff",
+		"navigationBarTitleText":"myMusic",
+		"navigationBarTextStyle":"white",
+		"enablePullDownRefresh":"true"
+	}
+}

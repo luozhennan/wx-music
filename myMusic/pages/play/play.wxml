@@ -1,0 +1,46 @@
+<view class="play">
+	<view class="top">
+		<view id="title">
+			<view>{{currName}}</view>
+			<view>{{currSinger}}</view>
+		</view>
+		<view class="bg">
+			<view class="play-bg"></view>
+			<view class="play-inv"></view>
+			<image mode="aspectFit" class="play-img" src="{{currImg}}"></image>
+		</view>
+	</view>
+
+
+	<view class="bottom">
+		<view class="slider">
+			<view class="curtime">{{currTime}}/{{positionTime}}</view>
+			<slider class="poSlider" max="{{duration}}" bindchange="dragChange" step="1" value="{{currentPosition}}" show-value></slider>
+		</view>
+		<view class="control">
+			<view class="listLoop" bindtap="playLoop" wx:if="{{random==0}}"></view>
+			<view class="random" bindtap="playLoop" wx:if="{{random==1}}"></view>
+			<view class="listOne" bindtap="playLoop" wx:if="{{random==2}}"></view>
+			<view class="prev" bindtap="prevPlay"></view>
+			<view class="pause" bindtap="pauseStop" wx:if="{{!isPlay}}"></view>
+			<view class="stop" bindtap="pauseStop" wx:if="{{isPlay}}"></view>
+			<view class="next" bindtap="nextPlay"></view>
+			<view class="list" bindtap="listShow">
+				<scroll-view scroll-y wx:if="{{isList}}" class="list-scroll">
+					<block wx:for="{{musicData}}">
+						<view id="{{index}}" bindtap="itemTap" class="item">{{item.name}}</view>
+					</block>
+				</scroll-view>
+			</view>
+		</view>
+	</view>
+
+
+
+
+
+
+
+</view>
+
+

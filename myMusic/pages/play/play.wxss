@@ -1,0 +1,185 @@
+page{
+	background-color: rgba(0,0,0,.4);
+}
+
+.play{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+}
+.top{
+	flex: 2;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+}
+.top #title{
+	flex: 1;
+}
+.top #title view{
+	height: 50%;
+	text-align: center;
+	font-size: 14px;
+}
+.top .bg{
+	flex: 5;
+	position: relative;
+	justify-content: center;
+}
+.play-bg{
+	width: 600rpx;
+	height: 600rpx;
+	position: absolute;
+	top: 50%;
+	margin-top: -300rpx;
+	left: 50%;
+	margin-left: -300rpx;
+	background-image: url("../../resources/images/cd_b.png");
+	background-size: 600rpx 600rpx;
+	background-repeat: no-repeat;
+}
+.play-inv{
+	width: 300rpx;
+	height: 200rpx;
+	position: absolute;
+	top: -38rpx;
+	right: 172rpx;
+	background: url("../../resources/images/cd_g.png") no-repeat center;
+	background-size: 300rpx 200rpx;
+	z-index: 1;
+}
+
+.play-img{
+	width: 400rpx;
+	height: 400rpx;
+	position: absolute;
+	top: 50%;
+	margin-top: -200rpx;
+	left: 50%;
+	margin-left: -200rpx;
+	border-radius: 50%;
+	-webkit-animation:circle 10s infinite linear;
+    animation:circle 10s infinite linear;
+}
+
+@-webkit-keyframes circle{
+    0%{ transform:rotate(0deg); }
+    100%{ transform:rotate(360deg); }
+}
+
+/*bottom部分*/
+.bottom{
+	flex: 1;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+}
+
+.slider{
+	flex: 1;
+	width: 100%;
+	align-self: center;
+}
+
+.curtime{
+	width: 150rpx;
+	height: 80rpx;
+	text-align: center;
+	line-height: 80rpx;
+	font-size: 26rpx;
+	color: #fff;
+}
+
+.slider .poSlider{
+	margin: 0 20rpx 0 180rpx;
+	height: 80rpx;
+	position: relative;
+	top: -60rpx;
+}
+
+.control{
+	flex: 2;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-around;
+}
+.control view{
+	cursor: pointer;
+	width: 120rpx;
+	height: 120rpx;
+	border-radius: 50%;
+}
+
+.listLoop{
+	background: url("../../resources/images/play_icn_loop.png") no-repeat center;
+	background-size: 120rpx 120rpx;
+}
+
+.random{
+	background: url("../../resources/images/play_icn_shuffle.png");
+	background-size: 120rpx 120rpx;
+}
+
+.listOne{
+	background: url("../../resources/images/play_icn_one.png");
+	background-size: 120rpx 120rpx;
+}
+
+.prev{
+	background: url("../../resources/images/play_btn_prev.png") no-repeat center;
+	background-size: 120rpx 120rpx;
+}
+.stop{
+	background: url("../../resources/images/play_btn_play.png") no-repeat center;
+	background-size: 120rpx 120rpx;
+}
+
+.pause{
+	background: url("../../resources/images/play_btn_pause.png") no-repeat center;
+	background-size: 120rpx 120rpx;
+}
+
+
+.next{
+	background: url("../../resources/images/play_btn_next.png") no-repeat center;
+	background-size: 120rpx 120rpx;
+}
+.list{
+	position: relative;
+	background: url("../../resources/images/play_icn_src.png") no-repeat center;
+	background-size: 120rpx 120rpx;
+}
+.list-scroll{
+	width: 400rpx;
+	height: 600rpx;
+	position: absolute;
+	top: -600rpx;
+	left: -272rpx;
+	background-color: rgba(0,0,0,.6);
+}
+.item{
+	width: 100% !important;
+	height: 80rpx !important;
+	line-height: 80rpx;
+	text-align: center;
+	color: #fff;
+	border: 1px solid #fff;
+	margin-top: 10rpx;
+	border-radius: 0 !important;
+	cursor: pointer;
+}

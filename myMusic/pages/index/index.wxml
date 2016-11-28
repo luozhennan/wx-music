@@ -1,0 +1,4 @@
+<view class="radioList" data-id="{{radioList[1].radioid}}" bindtap="hotMusic">
+	<text>{{radioList[1].Ftitle}}</text>
+	<image src="{{radioList[1].picUrl}}"></image>
+</view>
